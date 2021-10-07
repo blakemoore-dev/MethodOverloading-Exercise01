@@ -7,9 +7,14 @@ namespace MethodOverloading_Exercise01
         static void Main(string[] args)
         {
             Console.WriteLine(Add(1, 2));
+            Console.WriteLine(Add(1.2m, 34.2m));
             Console.WriteLine(Add(1, 0, false));
         }
         public static int Add(int x, int y)
+        {
+            return x + y;
+        }
+        public static decimal Add(decimal x, decimal y)
         {
             return x + y;
         }
